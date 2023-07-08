@@ -3,7 +3,7 @@ import "./TicTac.css";
 const TicTac = () => {
   const [turn, setTurn] = useState("x");
   const [cells, setCells] = useState(Array(9).fill(""));
-  const [winner, setWinner] = useState("x");
+  const [winner, setWinner] = useState("");
 
   const checkForWinner = (squares) => {
     let combos = {
